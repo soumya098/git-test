@@ -1,9 +1,13 @@
-{
+{ 
+  "resolutions": {
+    "minimist":"^1.2.5"
+  },
   "name": "git-test",
   "version": "1.0.0",
   "description": "This is a test directory to learn git and node",
   "main": "index.html",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
@@ -19,7 +23,8 @@
   },
   "homepage": "https://github.com/soumya098/git-test#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "minimist": "^1.2.5"
   },
   "dependencies": {
     "@popperjs/core": "^2.4.4",
