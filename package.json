@@ -1,6 +1,6 @@
-{ 
+{
   "resolutions": {
-    "minimist":"^1.2.5"
+    "minimist": "^1.2.5"
   },
   "name": "git-test",
   "version": "1.0.0",
@@ -29,6 +29,7 @@
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
