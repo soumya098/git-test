@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+    box-sizing: border-box;
+    padding-left: 0px;
+}
+
+.row-header{
+    margin: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 20px 0px;
+    border-bottom: 1px ridge ;
+    }
+footer{
+    background: rgba(95, 236, 212, 0.315);
+    padding: 15px 0px ;
+}
+.jumbotron{
+    margin: 0px auto;
+    padding: 50px 20px;
+    background: rgba(107, 15, 194, 0.753);
+    color: floralwhite;
+}
+
+.address{
+    font-style: italic;
+    font-size: 80%;
+    color: rgba(0, 0, 0, 0.705);
+}
