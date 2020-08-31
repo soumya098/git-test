@@ -10,7 +10,7 @@ ul{
 
 .row-content{
     margin: 0px auto;
-    padding: 20px 0px;
+    padding: 40px 0px;
     border-bottom: 1px ridge ;
     }
 footer{
@@ -19,7 +19,7 @@ footer{
 }
 .jumbotron{
     margin: 0px auto;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background: rgba(107, 15, 194, 0.753);
     color: floralwhite;
 }
