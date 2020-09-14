@@ -36,8 +36,7 @@
                                 class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
-                <span class="navbar-text"><a data-toggle="modal" data-target="#loginmodal"><span
-                            class="fa fa-sign-in"></span> Log-in</a></span>
+                <span class="navbar-text"><a id="loginform"><span class="fa fa-sign-in"></span> Log-in</a></span>
             </div>
         </div>
     </nav>
@@ -46,10 +45,35 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title mb-0">Login</h4>
+                    <button type="button" class="close">&times;</button>
                 </div>
                 <div class="modal-body">
+                    <form>
+                        <div class="form">
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-4 mb-2">
+                                    <input class="form-control" type="email" name="email" id="emailid"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="col-12 col-sm-4 mb-2">
+                                    <input class="form-control" type="password" name="password" id="password"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col-12 col-sm form-check ml-3">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve"
+                                        value="true">
+                                    <label for="approve" class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-group row  justify-content-end mr-2">
+                                <button type="button" class="btn btn-secondary mr-2" id="cancellogin">Cancel
+                                </button>
+                                <button class="btn btn-primary mr-2">Sign in
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -67,7 +91,7 @@
                     <img src="./img/logo.png" alt="LogoLarge" class="img-fluid img-center">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block btn-warning nav-link" data-toggle="modal" data-target="#formid">
+                    <a id="reserveform" role="button" class="btn btn-block btn-warning nav-link">
                         Reserve Table
                     </a>
                 </div>
@@ -80,29 +104,29 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form class="form">
                         <div class="row">
                             <p class="col-12 col-sm-2">Number of Guests</p>
                             <div class="col-12 col-sm-8">
-                                <input type="radio" class="" id="one" value="1" name="guest number">
+                                <input type="radio" class="radiobtn" id="one" value="1" name="guest number">
                                 <label class="label" for="one">1</label>
 
-                                <input type="radio" class="" id="two" value="2" name="guest number">
+                                <input type="radio" class="radiobtn" id="two" value="2" name="guest number">
                                 <label class="label" for="two">2 </label>
 
-                                <input type="radio" class="" id="three" value="3" name="guest number">
+                                <input type="radio" class="radiobtn" id="three" value="3" name="guest number">
                                 <label class="label" for="three">3 </label>
 
-                                <input type="radio" class="" id="four" value="4" name="guest number">
+                                <input type="radio" class="radiobtn" id="four" value="4" name="guest number">
                                 <label class="label" for="four">4 </label>
 
-                                <input type="radio" class="" id="five" value="5" name="guest number">
+                                <input type="radio" class="radiobtn" id="five" value="5" name="guest number">
                                 <label class="label" for="five">5 </label>
 
-                                <input type="radio" class="" id="six" value="6" name="guest number">
+                                <input type="radio" class="radiobtn" id="six" value="6" name="guest number">
                                 <label class="label" for="six">6 </label>
 
                             </div>
@@ -113,12 +137,13 @@
                             <div class="col-12 col-sm-8">
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
-                                      <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                        <input type="radio" name="options" id="option1" autocomplete="off"
+                                            checked>Non-Smoking
                                     </label>
                                     <label class="btn btn-danger">
-                                      <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                        <input type="radio" name="options" id="option2" autocomplete="off">Smoking
                                     </label>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-2">
@@ -130,7 +155,7 @@
                         </div>
                         <div class="row mt-2">
                             <div class="col-auto offset-sm-2">
-                                <button class="btn btn-secondary" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-secondary" id="cancelform">cancel</button>
                                 <button class="btn btn-primary"> Reserve</butto>
                             </div>
 
@@ -146,7 +171,8 @@
 
         <div class="row row-content">
             <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval=0>
+
                     <div class="carousel-inner" role="listbox">
 
                         <div class="carousel-item active">
@@ -191,6 +217,7 @@
                         </div>
 
                     </div>
+
                     <ol class="carousel-indicators">
                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
@@ -202,6 +229,9 @@
                     <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <button class="btn btn-danger btn-sm" id="carousel-btn">
+                        <span class="fa fa-pause"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -329,6 +359,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
+    <script src="./js1.js"></script>
 </body>
 
 </html>

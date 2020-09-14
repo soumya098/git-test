@@ -71,3 +71,31 @@ body{
     left: 0;
     min-height: 300px;
 }
+
+#carousel-btn{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.modal-header {
+    background-color:rgb(69, 4, 107);
+    color:floralwhite;
+}
+.close{
+    background-color:floralwhite;
+    color:floralwhite;
+}
+
+.close:hover {
+    background-color:floralwhite;
+    color:rgb(69, 4, 107);
+}
+.modal-body{
+    color: black;
+    background-color:rgb(220, 169, 250);
+}
+.radiobtn{
+    color: blue;
+}
