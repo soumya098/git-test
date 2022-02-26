@@ -1,53 +1,53 @@
 {
-  "resolutions": {
-    "minimist": "^1.2.5"
-  },
-  "name": "git-test",
-  "version": "1.0.0",
-  "description": "This is a test directory to learn git and node",
-  "main": "index.html",
-  "scripts": {
-    "preinstall": "npx npm-force-resolutions",
-    "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "concurrently \"npm run watch:scss\" \"npm run lite\"",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin img/* --out-dir='dist/img'",
-    "copyfile": "copyfiles -f js /* dist/js",
-    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin && usemin aboutus.html -d dist -o dist/aboutus.html --htmlmin && usemin contactus.html -d dist -o dist/contactus.html --htmlmin",
-    "build": "npm run clean && npm run imagemin && npm run copyfile && npm run usemin"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soumya098/git-test.git"
-  },
-  "author": "Soumya Nayak",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soumya098/git-test/issues"
-  },
-  "homepage": "https://github.com/soumya098/git-test#readme",
-  "devDependencies": {
-    "concurrently": "^5.3.0",
-    "cssmin": "^0.4.3",
-    "htmlmin": "0.0.7",
-    "lite-server": "^2.5.4",
-    "minimist": "^1.2.5",
-    "node-sass": "^4.14.1",
-    "onchange": "^7.0.2",
-    "rimraf": "^3.0.2",
-    "uglifyjs": "^2.4.11",
-    "usemin": "^0.6.0",
-    "usemin-cli": "^0.6.0"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.4.4",
-    "bootstrap": "^4.5.2",
-    "grunt": "^1.3.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
-  }
+	"resolutions": {
+		"minimist": "^1.2.5"
+	},
+	"name": "git-test",
+	"version": "1.0.0",
+	"description": "This is a test directory to learn git and node",
+	"main": "index.html",
+	"scripts": {
+		"preinstall": "npx npm-force-resolutions",
+		"start": "npm run watch:all",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lite": "lite-server",
+		"scss": "node-sass -o css/ css/",
+		"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+		"watch:all": "concurrently \"npm run watch:scss\" \"npm run lite\"",
+		"clean": "rimraf dist",
+		"imagemin": "imagemin img/* --out-dir='dist/img'",
+		"copyfile": "copyfiles -f js /* dist/js",
+		"usemin": "usemin index.html -d dist -o dist/index.html --htmlmin && usemin aboutus.html -d dist -o dist/aboutus.html --htmlmin && usemin contactus.html -d dist -o dist/contactus.html --htmlmin",
+		"build": "npm run clean && npm run imagemin && npm run usemin"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/soumya098/git-test.git"
+	},
+	"author": "Soumya Nayak",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/soumya098/git-test/issues"
+	},
+	"homepage": "https://github.com/soumya098/git-test#readme",
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"cssmin": "^0.4.3",
+		"htmlmin": "0.0.7",
+		"lite-server": "^2.5.4",
+		"minimist": "^1.2.5",
+		"node-sass": "^4.14.1",
+		"onchange": "^7.0.2",
+		"rimraf": "^3.0.2",
+		"uglifyjs": "^2.4.11",
+		"usemin": "^0.6.0",
+		"usemin-cli": "^0.6.0"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.4.4",
+		"bootstrap": "^4.5.2",
+		"grunt": "^1.3.0",
+		"jquery": "^3.5.1",
+		"popper.js": "^1.16.1"
+	}
 }
