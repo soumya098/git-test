@@ -21,6 +21,7 @@ $(function () {
         $('#loginmodal').modal('hide');
     });
 
+
     $('#reserveform').on('click', function () {
         $('#formid').modal('show');
     });

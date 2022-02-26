@@ -16,7 +16,7 @@
     "watch:all": "concurrently \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
     "imagemin": "imagemin img/* --out-dir='dist/img'",
-    "copyfile":"copyfiles -f js/* dist/js",
+    "copyfile": "copyfiles -f js /* dist/js",
     "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin && usemin aboutus.html -d dist -o dist/aboutus.html --htmlmin && usemin contactus.html -d dist -o dist/contactus.html --htmlmin",
     "build": "npm run clean && npm run imagemin && npm run copyfile && npm run usemin"
   },
@@ -46,6 +46,7 @@
   "dependencies": {
     "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.2",
+    "grunt": "^1.3.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
